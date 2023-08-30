@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top">
+        <a href="#logo" class="logo"> Lee Raikanya <img src="copyright_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <a href="#about" class="navlink"> About me </a>
+        <a href="#projects" class="navlink"> Projects</a>
+        <a href="#resume" class="navlink"> Resume </a>
+        <a href="contact" class="navlink" id="calltoaction"> Contact me </a>
+    </nav>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelectorAll('.navlink');
+            navLinks.forEach(link => {
+                link.classList.toggle('show');
+            });
+        }
+    </script>
+    <div class="hero ">
+        <div class="intro"><h1 style="font-weight: normal;"> Hi, Im <span style="color:#8C6057;">Lee.</span> <br> A Student at KCA University | <span style="color: #8C6057;"> Aspiring software engineer</span> <br> From Nairobi, Kenya <img src="kenya (3).svg"></h1>  
+            <div class="profiles">
+            <a href=" https://www.linkedin.com/in/leeraikanya/" title="Linkedin"><img src="linkedin (1).svg"> </a>
+            <a href="mailto:leeraikanya7@gmail.com" title="Gmail"><img src="mail (1) (1).svg"> </a>
+            </div>
+        </div>
+        
+        <div class="pic"> 
+            <img src="lee.jpg">   
+        </div>
+    </div>
+
+    <div clss="skills">
+    </div>
+    
+        <h2 style="text-align: center;
+                    color: #F0F2EF;
+                    margin-top: 10px;
+              -webkit-text-stroke: 0.4px #8C6057;"> Languages and technologies </h2>
+        
+        <div class="lang">
+             <h1></h1>
+        </div>
+
+    
+</body>
+</html>
