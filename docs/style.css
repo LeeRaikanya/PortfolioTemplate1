@@ -49,7 +49,7 @@ body {
     background-color: #8C6057;
     transform: scaleX(0);
     transform-origin: left center;
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Add background-color transition */
+    transition: transform 0.3s ease, background-color 0.3s ease; 
 }
 
 
