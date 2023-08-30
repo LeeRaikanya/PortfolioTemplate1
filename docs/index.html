@@ -16,6 +16,12 @@
           opacity: 0; 
           transition: opacity 1s ease-in-out; 
         }
+
+       
+
+ 
+
+
       </style>
 
 
@@ -24,10 +30,10 @@
 </head>
 <body>
     <nav class="top">
-        <a href="#logo" class="logo"> Lee Raikanya <img src="copyright (1).svg" alt=""></a>
+        <a href="#logo" class="logo"> Lee Raikanya <img src="copyright (1).svg" alt="" style="margin: 0px;"></a>
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
         <a href="#about" class="navlink"> About me </a>
-        <a href="#projects" class="navlink"> Projects</a>
+        <a href="#work" class="navlink smooth-scroll"> Projects</a>
         <a href="#resume" class="navlink"> Resume </a>
     </nav>
     <script>
@@ -35,14 +41,23 @@
             const navLinks = document.querySelectorAll('.navlink');
             navLinks.forEach(link => {
                 link.classList.toggle('show');
+               
             });
+
+            const menuIcon = document.querySelector('.menu-icon');
+        menuIcon.classList.toggle('open'); 
+    
         }
+
+    
+
+
     </script>
     <div class="hero ">
         <div class="intro"><h1 style="font-weight: normal;"> Hi, Im <span style="color:#8C6057;">Lee.</span> <br> A Student at KCA University | <span style="color: #8C6057;"> Aspiring software engineer</span> <br> From Nairobi, Kenya <img src="kenya (3).svg"></h1>  
             <div class="profiles">
-            <p class="glowing-text">Contact me ---- >></>> </p>
-            <a href=" https://www.linkedin.com/in/leeraikanya/" title="Linkedin"><img src="linkedin (1).svg"> </a>
+            <p class="glowing-text">Contact me --- >>>> </p>
+            <a href=" https://www.linkedin.com/in/leeraikanya/" title="Linkedin"> <img src="linkedin (1).svg" style="margin-top: 2px;"> </a>
             <a href="mailto:leeraikanya7@gmail.com" title="Gmail"><img src="mail (1) (1).svg"> </a>
             <a href="https://github.com/LeeRaikanya" title="Github"><img src="github (2).svg"> </a>
             </div>
@@ -56,10 +71,9 @@
    
     
         <h2 style="text-align: center;
-                    color: #F0F2EF;
-                    margin-top: 10px;
-                    margin-bottom: 20px;
-              -webkit-text-stroke: 0.4px #8C6057;"> Languages and Skills</h2>
+                    color: #8C6057;
+                    font-weight: bold;
+                    margin-top: 10px;"> Languages and Skills</h2>
         
         <div class="lang">
              <div class="grid-item"> <img src="html-5 (1).svg"> HTML </div>
@@ -71,18 +85,25 @@
              <div class="grid-item"> <img src="layers (1).svg"> Full stack development </div>
              <div class="grid-item"> <img src="code-branch (1).svg"> Git/Github</div>
              <div class="grid-item"> <img src="connection-cables (1).svg"> Networking principles</div>
+             <div class="grid-item"> <img src="computer-process (1).svg" style="margin-right: 10px;"> IT essentials and troubleshooting </div>
 
            
         </div>
         </div>
 
+        <p id="work"></p>
         <h2 style="text-align: center;
-        color: #F0F2EF;
+        color: #8C6057;
+        font-weight: bold;
         margin-top: 30px;
-        margin-bottom: 20px;
-  -webkit-text-stroke: 0.4px #8C6057;"> Projects</h2>
+        margin-bottom: 20px;"> Projects</h2>
 
-       <div class="projects">
+        <div class="projects">
+
+        </div>
+    
+
+       
 
        </div>
 

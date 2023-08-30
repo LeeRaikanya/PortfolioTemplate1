@@ -1,6 +1,5 @@
 body {
     background: #F0F2EF;
-    padding-bottom: 2000px;
     font-family: 'Montserrat', sans-serif;
    
 }
@@ -71,21 +70,33 @@ body {
 @media screen and (max-width: 768px) {
     .top {
         flex-direction: column;
+        
     }
     
     .navlink {
         display: none;
         margin-top: 10px;
+       
+         
     }
     
     .menu-icon {
         display: block;
         margin-top: 10px;
+        transition: transform 0.8s ease-in-out; 
     }
     
     .navlink.show {
         display: block;
+        opacity: 1; 
+        transform: translateX(0); 
+    
     }
+}
+
+.menu-icon.open {
+  transform: rotate(90deg);
+  
 }
 
 .hero{
@@ -141,11 +152,12 @@ body {
     margin-top: 20px;
     display: flex;
     gap: 20px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 2s ease-in-out;
 }
 .profiles a:hover {
     transform: translateY(-5px);
   }
+ 
   .lang {
     display: grid;
     margin-top: 20px;
@@ -187,24 +199,18 @@ body {
 .glowing-text {
     font-size: 18px;
     font-weight: bold;
-    color: #F0F2EF;
     position: relative;
     display: inline-block;
     animation: glowText 2s infinite alternate, arrowMove 1.5s infinite linear;
     margin: 0px;
     margin-top: 5px;
     font-size: 25px;
-    -webkit-text-stroke: 0.4px #8C6057;
+    color: #8C6057;
+    font-weight: bold;
+;
   }
   
-  @keyframes glowText {
-    from {
-      text-shadow: 0 0 10px rgba(140, 96, 87, 0.7);
-    }
-    to {
-      text-shadow: 0 0 20px rgba(140, 96, 87, 1);
-    }
-  }
+
   
   @keyframes arrowMove {
     0%, 100% {
@@ -228,6 +234,12 @@ body {
     height: 100vh;
     
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
   
 
 
